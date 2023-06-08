@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box
 }
 
@@ -10,7 +8,8 @@ html {
 }
 
 body {
-  font: 1.6rem "DM Sans", sans-serif
+  font-size: 1.6rem ;
+  font-family: 'Sora', sans-serif;
 }
 
 a {
@@ -30,5 +29,12 @@ button {
   font: inherit
 }
 
-/*  main  */
+/*  common  */
+.content {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
