@@ -870,6 +870,11 @@ color: #FFFFFF;
   justify-content: center;
   padding: 10px 21px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer__subscribe--action:hover {
+  opacity: 0.9;
 }
 
 .footer__seperate-line {
