@@ -99,49 +99,47 @@
         />
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <div class="header-top">
-                    <a href="#"
-                        ><div class="logo">
-                            <img
-                                src="./assets/icons/logo.svg"
-                                alt=""
-                                class="logo__img"
-                            />
-                            <div class="logo__text">
-                                <span class="logo__text--big">shine</span>
-                                <span class="logo__text--small">smile</span>
-                            </div>
-                        </div></a
-                    >
-                    <div class="header-top__options">
-                        <ul class="header__nav">
-                            <li>
-                                <a href="#" class="header__nav--link active"
-                                    >Home</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#!" class="header__nav--link"
-                                    >Services</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#!" class="header__nav--link">About</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="header__nav--link"
-                                    >Doctors</a
-                                >
-                            </li>
-                        </ul>
-                        <div class="header__account">
-                            <a href="#!" class="header__account-link">Log in</a>
-                            <a href="#!" class="header__account-btn">Sign up</a>
+        <div class="fixed-header">
+            <div class="header-top container">
+                <a href="#"
+                    ><div class="logo">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt=""
+                            class="logo__img"
+                        />
+                        <div class="logo__text">
+                            <span class="logo__text--big">shine</span>
+                            <span class="logo__text--small">smile</span>
                         </div>
+                    </div></a
+                >
+                <div class="header-top__options">
+                    <ul class="header__nav">
+                        <li>
+                            <a href="#" class="header__nav--link active"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#!" class="header__nav--link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="header__nav--link">About</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="header__nav--link">Doctors</a>
+                        </li>
+                    </ul>
+                    <div class="header__account">
+                        <a href="#!" class="header__account-link">Log in</a>
+                        <a href="#!" class="header__account-btn">Sign up</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
                 <article class="hero">
                     <article class="hero__text-area">
                         <h2 class="hero__text-area--title">
@@ -161,7 +159,7 @@
                             >
                         </section>
                     </article>
-                    <section class="hero__img-area">
+                    <figure class="hero__img-area">
                         <img
                             src="./assets/imgs/hero1.jpeg"
                             alt=""
@@ -172,7 +170,7 @@
                             alt=""
                             class="hero__img"
                         />
-                    </section>
+                    </figure>
                 </article>
             </div>
         </header>
@@ -180,7 +178,7 @@
             <!-- services -->
             <div class="services-wrapper">
                 <article class="container services">
-                    <article class="services__heading desc-box">
+                    <section class="services__heading desc-box">
                         <h2 class="services__heading--title title">
                             Our services
                         </h2>
@@ -189,7 +187,7 @@
                             smile <br />
                             begins with a great dentist.
                         </p>
-                    </article>
+                    </section>
                     <img
                         src="./assets/imgs/service.jpeg"
                         alt=""
@@ -328,49 +326,98 @@
                             >Meet our dentist</a
                         >
                     </article>
-                    <article class="dentist">
-                        <img
-                            src="./assets/imgs/dentist1.jpeg"
-                            alt="#!"
-                            class="dentist__img"
-                        />
-                        <h3 class="dentist__name">Dr. White Privilidge</h3>
-                        <p class="dentist__desc">
-                            DDS, California - Linda University
-                        </p>
-                    </article>
-                    <article class="dentist">
-                        <img
-                            src="./assets/imgs/dentist2.jpeg"
-                            alt="#!"
-                            class="dentist__img"
-                        />
-                        <h3 class="dentist__name">Dr. Black Woman</h3>
-                        <p class="dentist__desc">
-                            DDS, California - Linda University
-                        </p>
-                    </article>
-                    <article class="dentist">
-                        <img
-                            src="./assets/imgs/dentist3.jpeg"
-                            alt="#!"
-                            class="dentist__img"
-                        />
-                        <h3 class="dentist__name">Dr. Strange</h3>
-                        <p class="dentist__desc">
-                            DDS, California - Linda University
-                        </p>
-                    </article>
-                    <article class="dentist">
-                        <img
-                            src="./assets/imgs/dentist4.jpeg"
-                            alt="#!"
-                            class="dentist__img"
-                        />
-                        <h3 class="dentist__name">Dr. Ching Chong</h3>
-                        <p class="dentist__desc">
-                            DDS, California - Linda University
-                        </p>
+                    <article class="dentist__list">
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist1.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. White Privilidge</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist2.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Black Woman</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist3.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Strange</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist4.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Ching Chong</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist4.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Ching Chong</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist2.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Black Woman</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
+                        <article class="dentist">
+                            <div class="dentist__img-wrapper">
+                                <img
+                                    src="./assets/imgs/dentist3.jpeg"
+                                    alt="#!"
+                                    class="dentist__img"
+                                />
+                            </div>
+                            <h3 class="dentist__name">Dr. Strange</h3>
+                            <p class="dentist__desc">
+                                DDS, California - Linda University
+                            </p>
+                        </article>
                     </article>
                     <section class="dentists__slide slide">
                         <div class="slide--item">
@@ -432,42 +479,70 @@
                         </div>
                     </section>
                 </section>
-                <article class="news__list">
-                    <article class="news__item">
-                        <img
-                            src="./assets/imgs/news1.jpeg"
-                            alt=""
-                            class="news__item--img"
-                        />
-                        <div class="news__item-text">
-                            <h3 class="news__item--title">
-                                Key Considerations for Regulatory Compliant.
-                            </h3>
-                            <p class="news__item--desc">
-                                It’s easy to think about medical care from a
-                                narrow perspective. You go to the hospital.
-                            </p>
-                            <span class="news__item--more">Learn More</span>
-                        </div>
+                <div class="news__list--wrapper">
+                    <article class="news__list">
+                        <article class="news__item">
+                            <img
+                                src="./assets/imgs/news1.jpeg"
+                                alt=""
+                                class="news__item--img"
+                            />
+                            <div class="news__item-text">
+                                <h3>
+                                    <a href="#!" class="news__item--title"
+                                        >Key Considerations for Regulatory
+                                        Compliant.</a
+                                    >
+                                </h3>
+                                <p class="news__item--desc">
+                                    It’s easy to think about medical care from a
+                                    narrow perspective. You go to the hospital.
+                                </p>
+                                <span class="news__item--more">Learn More</span>
+                            </div>
+                        </article>
+                        <article class="news__item">
+                            <img
+                                src="./assets/imgs/news2.jpeg"
+                                alt=""
+                                class="news__item--img"
+                            />
+                            <div class="news__item-text">
+                                <h3>
+                                    <a href="#!" class="news__item--title"
+                                        >What Is Population Health
+                                        Management?</a
+                                    >
+                                </h3>
+                                <p class="news__item--desc">
+                                    It’s easy to think about medical care from a
+                                    narrow perspective. You go to the hospital.
+                                </p>
+                                <span class="news__item--more">Learn More</span>
+                            </div>
+                        </article>
+                        <article class="news__item">
+                            <img
+                                src="./assets/imgs/dentist3.webp"
+                                alt=""
+                                class="news__item--img"
+                            />
+                            <div class="news__item-text">
+                                <h3>
+                                    <a href="#!" class="news__item--title"
+                                        >What Is Population Health
+                                        Management?</a
+                                    >
+                                </h3>
+                                <p class="news__item--desc">
+                                    It’s easy to think about medical care from a
+                                    narrow perspective. You go to the hospital.
+                                </p>
+                                <span class="news__item--more">Learn More</span>
+                            </div>
+                        </article>
                     </article>
-                    <article class="news__item">
-                        <img
-                            src="./assets/imgs/news2.jpeg"
-                            alt=""
-                            class="news__item--img"
-                        />
-                        <div class="news__item-text">
-                            <h3 class="news__item--title">
-                                What Is Population Health Management?
-                            </h3>
-                            <p class="news__item--desc">
-                                It’s easy to think about medical care from a
-                                narrow perspective. You go to the hospital.
-                            </p>
-                            <span class="news__item--more">Learn More</span>
-                        </div>
-                    </article>
-                </article>
+                </div>
             </article>
             <!-- cta -->
             <article class="cta container">
